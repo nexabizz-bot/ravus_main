@@ -1,0 +1,45 @@
+{
+  "name": "ravus-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "globe:generate": "node scripts/generate-globe-points.mjs",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.8.1",
+    "@tanstack/react-query": "^5.90.2",
+    "@xyflow/react": "^12.12.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "konva": "^10.0.12",
+    "lucide-react": "^0.468.0",
+    "motion": "^13.4.4",
+    "next": "^16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-konva": "^19.3.0",
+    "tailwind-merge": "^3.3.1",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^24.5.2",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.180.0",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "^16.3.6",
+    "tailwindcss": "^4.3.3",
+    "topojson-client": "^3.1.0",
+    "typescript": "^5.9.2",
+    "world-atlas": "^2.0.2"
+  }
+}

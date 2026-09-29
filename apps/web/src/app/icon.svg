@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ravus" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#EEEEEE"/>
+      <stop offset="1" stop-color="#808080"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#000000"/>
+  <g transform="rotate(-18 32 32)" fill="url(#ravus)">
+    <path d="M15 13c0-3 2-5 5-5h13v16c0 3-2 5-5 5H15z"/>
+    <path d="M35 30c0-3 2-5 5-5h12v17c0 3-2 5-5 5H35z"/>
+    <path d="M16 39c0-2 2-4 4-4h7v9c0 2-2 4-4 4h-7z"/>
+  </g>
+</svg>
