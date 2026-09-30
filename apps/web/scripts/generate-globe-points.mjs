@@ -9,10 +9,15 @@ const polygons = feature(land, land.objects.land).features[0].geometry.coordinat
 
 function inRing(lon, lat, ring) {
   let inside = false;
+  // Tiny islands straddling 180° otherwise look like a band across the ocean.
+  const wrapsDateline = ring.length < 20 && ring.some(([x], index) => Math.abs(x - ring[(index + 1) % ring.length][0]) > 180);
+  const testLon = wrapsDateline && lon < 0 ? lon + 360 : lon;
   for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
-    const [xi, yi] = ring[i];
-    const [xj, yj] = ring[j];
-    if ((yi > lat) !== (yj > lat) && lon < ((xj - xi) * (lat - yi)) / (yj - yi) + xi) {
+    const [rawXi, yi] = ring[i];
+    const [rawXj, yj] = ring[j];
+    const xi = wrapsDateline && rawXi < 0 ? rawXi + 360 : rawXi;
+    const xj = wrapsDateline && rawXj < 0 ? rawXj + 360 : rawXj;
+    if ((yi > lat) !== (yj > lat) && testLon < ((xj - xi) * (lat - yi)) / (yj - yi) + xi) {
       inside = !inside;
     }
   }
@@ -26,7 +31,7 @@ function onLand(lon, lat) {
 }
 
 // Golden-angle sampling makes the dots evenly spaced on the sphere.
-const samples = 13200;
+const samples = 25000;
 const goldenAngle = Math.PI * (3 - Math.sqrt(5));
 const points = [];
 for (let index = 0; index < samples; index++) {

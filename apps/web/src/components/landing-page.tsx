@@ -427,9 +427,7 @@ function AnalyticsSection() {
             </div>
           </Reveal>
           <Reveal className="analytics-globe-stage" delay={0.12}>
-            <div className="analytics-globe-halo" aria-hidden="true" />
             <div className="analytics-globe-canvas" aria-label="Animated dotted globe showing a connected customer journey"><GlobeScene /></div>
-            <span className="analytics-globe-caption">ONE CONNECTED CUSTOMER JOURNEY</span>
           </Reveal>
         </div>
         <Reveal className="analytics-dashboard">

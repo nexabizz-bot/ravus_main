@@ -288,7 +288,7 @@ button.proposal-card:hover, button.proposal-card.selected { background: #1B1B1B;
   .human-outcome-record span { font-size: 10px; }
 }
 
-/* Results: an original warm-toned globe paired with illustrative funnel data. */
+/* Results: a high-contrast interactive globe paired with illustrative funnel data. */
 .analytics-feature {
   display: grid;
   grid-template-columns: 47% 53%;
@@ -298,7 +298,7 @@ button.proposal-card:hover, button.proposal-card.selected { background: #1B1B1B;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.083);
   border-radius: 24px;
-  background: radial-gradient(circle at 77% 45%, rgba(255, 255, 255, 0.083), transparent 42%), linear-gradient(125deg, #121212, #121212 68%);
+  background: #000;
 }
 .analytics-feature-copy { position: relative; z-index: 2; padding: 60px 0 60px 7%; }
 .analytics-feature-copy h2 { max-width: 620px; margin: 26px 0 20px; font-size: clamp(48px, 5.2vw, 78px); line-height: .98; letter-spacing: -.065em; }
@@ -310,10 +310,8 @@ button.proposal-card:hover, button.proposal-card.selected { background: #1B1B1B;
 .analytics-feature-metrics strong { color: #FFFFFF; font-size: clamp(37px, 4vw, 56px); line-height: 1; letter-spacing: -.06em; }
 .analytics-feature-metrics span { color: #EEEEEE; font-size: 12px; }
 .analytics-globe-stage { position: relative; height: 100%; min-height: 600px; isolation: isolate; }
-.analytics-globe-halo { position: absolute; inset: 14% 3%; border-radius: 50%; background: radial-gradient(circle, rgba(255, 255, 255, 0.065), transparent 61%); filter: blur(18px); }
 .analytics-globe-canvas { position: absolute; inset: 0; }
 .analytics-globe-canvas canvas { display: block; }
-.analytics-globe-caption { position: absolute; right: 10%; bottom: 36px; color: #999999; font-size: 10px; font-weight: 800; letter-spacing: .14em; }
 @media (max-width: 1000px) {
   .analytics-feature { grid-template-columns: 1fr; }
   .analytics-feature-copy { padding: 54px 8% 0; }
@@ -327,8 +325,7 @@ button.proposal-card:hover, button.proposal-card.selected { background: #1B1B1B;
   .analytics-feature-metrics { gap: 21px 12px; }
   .analytics-feature-metrics strong { font-size: 37px; }
   .analytics-feature-metrics span { font-size: 10px; }
-  .analytics-globe-stage { min-height: 365px; }
-  .analytics-globe-caption { right: 6%; bottom: 16px; font-size: 8px; }
+  .analytics-globe-stage { min-height: 430px; }
   .dashboard-top .sample-tag { font-size: 10px; }
 }
 
