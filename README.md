@@ -19,7 +19,7 @@ The frontend is a responsive, animated landing page built with Next.js App Route
 
 - Shows animated 3D artwork in the hero, a live 3D closing scene, and a scroll-driven journey from website import to booking.
 - Presents three illustrated customer journeys in a scroll-driven phone showcase, with a subtle animated canvas backdrop and a swipeable sample gallery on smaller screens.
-- Uses original, local visual assets for the hero, campaign previews, business gallery, and real-world booking moment. See [docs/visual-assets.md](docs/visual-assets.md).
+- Uses original, local visual assets for the hero, campaign previews, business gallery, and real-world booking moment.
 - Lets you approve sample posts into a publishing calendar, compare creative revisions with a draggable split, switch creative versions, and inspect a campaign graph.
 - Shows an illustrative campaign across a social post, landing page, and booking conversation, plus a photo gallery for dental, fitness, café, and real estate businesses.
 - Lets you review a sample campaign, walk through a WhatsApp booking, and move suggested improvements through a review board.
@@ -40,4 +40,21 @@ From `apps/web`, run `npm run typecheck`, `npm run lint`, and `npm run build`.
 
 ## Next stages
 
-See [docs/roadmap.md](docs/roadmap.md) for the staged product build and [docs/decisions.md](docs/decisions.md) for architecture direction. The FastAPI scaffold in `services/api` is not yet wired to the frontend.
+The FastAPI scaffold in `services/api` is not yet wired to the frontend.
+
+# Third-party notices
+
+The globe's geographic dots were generated from `world-atlas` land-110m data using `topojson-client`.
+Both packages are Copyright 2013–2019 Michael Bostock and distributed under the following license:
+
+> Permission to use, copy, modify, and/or distribute this software for any purpose
+> with or without fee is hereby granted, provided that the above copyright notice
+> and this permission notice appear in all copies.
+>
+> THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+> REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+> FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+> INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
+> OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+> TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+> THIS SOFTWARE.
